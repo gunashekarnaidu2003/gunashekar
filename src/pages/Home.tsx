@@ -66,13 +66,15 @@ const Home = () => {
         className="flex space-x-6"
       >
         {[
-          { Icon: Github, label: 'GitHub', href: '#' },
-          { Icon: Linkedin, label: 'LinkedIn', href: '#' },
-          { Icon: Mail, label: 'Email', href: 'mailto:your.email@example.com' },
+          { Icon: Github, label: 'GitHub', href: 'https://github.com/gunashekarnaidu2003' },
+          { Icon: Linkedin, label: 'LinkedIn', href: 'http://www.linkedin.com/in/gunashekarnaidu' },
+          { Icon: Mail, label: 'Email', href: 'mailto:gunashekarnaidu2003@gmail.com' },
         ].map(({ Icon, label, href }, index) => (
           <motion.a
             key={label}
             href={href}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center space-x-2 px-4 py-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors"
             whileHover={{ scale: 1.1, backgroundColor: "rgba(255,255,255,0.15)" }}
             whileTap={{ scale: 0.95 }}
